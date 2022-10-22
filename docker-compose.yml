@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  nvim:
+    build: ./
+    volumes: 
+      - ./config/nvim:/home/app/.config/nvim
+      - $XDG_RUNTIME_DIR/$WAYLAND_DISPLAY:/tmp/$WAYLAND_DISPLAY
+      - /home/held/iWork/test/go-test:/home/app/app
+      - ./tmp:/home/app/.local
+    environment:
+      XDG_RUNTIME_DIR: /tmp 
+      WAYLAND_DISPLAY: $WAYLAND_DISPLAY 
+    user: app
