@@ -44,7 +44,11 @@ require "paq" {
 	
 	{'ray-x/go.nvim'};
 	{'nvim-treesitter/nvim-treesitter'};
-
+	-- golang debug adapter
+	{'mfussenegger/nvim-dap'};
+	{"rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"}};
+	-- golang tests
+	{'buoto/gotests-vim'};
 
 	{'nvim-tree/nvim-web-devicons'}; -- optional, for file icons
 	{'nvim-tree/nvim-tree.lua'};

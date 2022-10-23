@@ -26,11 +26,27 @@ USER app
 # create directory for nvim configs
 RUN mkdir ~/.config/
 RUN mkdir -p ~/.local/nvim
-# COPY ./config/nvim /home/app/.config/nvim
-# VOLUME ./config/nvim /home/app/.config/nvim
-# VOLUME /home/app/.local
-#install pugin manager paq-nvim
-# RUN git clone --depth=1 https://github.com/savq/paq-nvim.git \
-    # "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/pack/paqs/start/paq-nvim
+
+
+#Install tools for golang
+# Iferr snipet for iferr
+RUN go install github.com/koron/iferr@latest
+# Format long lines
+RUN go install github.com/segmentio/golines@latest
+# Format code
+RUN go install mvdan.cc/gofumpt@latest
+# Testsum
+RUN go install gotest.tools/gotestsum@latest
+# Autofill tags
+RUN go install github.com/fatih/gomodifytags@latest
+# Add Test Ginkgo
+RUN go install github.com/onsi/ginkgo/v2/ginkgo@latest
+# Add Tests
+RUN go install github.com/cweill/gotests/gotests@latest
+# Add a tool for answering questions about go source code
+RUN go install golang.org/x/tools/cmd/guru@latest
+
+
+
 
 WORKDIR /app
