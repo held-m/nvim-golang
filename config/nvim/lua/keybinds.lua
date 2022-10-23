@@ -29,3 +29,7 @@ map('v', '<Leader>t', '<CMD>FzfLua grep<CR>')
 map('n', '<Leader>w', '<CMD>FzfLua grep_cword<CR>')
 map('i', '<Leader>w', '<CMD>FzfLua grep_cword<CR>')
 map('v', '<Leader>w', '<CMD>FzfLua grep_cword<CR>')
+-- FzfLua open FzfLua
+map('n', '<Leader>o', '<CMD>FzfLua<CR>')
+map('i', '<Leader>o', '<CMD>FzfLua<CR>')
+map('v', '<Leader>o', '<CMD>FzfLua<CR>')

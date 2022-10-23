@@ -9,6 +9,10 @@ make install
 
 Leader - ";"  
 
+### Navigation
+Ctrl+i - move to start of the line  
+Ctrl+a - move to end of the line  
+
 ### LSP
 
 ### NvimTreeToggle
