@@ -5,8 +5,8 @@ local function map(m, k, v)
 end
 
 -- Move cursor in interactive mod
-map('i', '<C-I>', '<ESC>A')
-map('i', '<C-A>', '<ESC>I')
+map('i', '<C-A>', '<ESC>A')
+map('i', '<C-I>', '<ESC>I')
 
 -- NvimTreeToggle Open 
 map('n', '<C-J>', '<CMD>NvimTreeToggle<CR>')
