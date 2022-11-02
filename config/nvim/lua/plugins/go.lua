@@ -13,6 +13,8 @@ require'nvim-treesitter.configs'.setup {
     },
 }
 
+--- GO
+require('go').setup()
 
 --vim.g:go_highlight_types(1);
 --vim.g:go_highlight_fields: 1
