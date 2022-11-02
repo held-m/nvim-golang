@@ -1,9 +1,22 @@
 # Neovim Golang
 ## Intall
 
-make install  
+`docker build -t %name% .`
 
 ## Usage
+docker  
+`docker run -it -v $(pwd):/app %name% sh`
+
+docker-compose.yml
+```
+version: "3"
+
+services:
+  nvim:
+    image:docker.simonenko.club/nvim-golang-1.19:latest
+    volumes:
+        - ./:/app
+```
 
 ## Keymap
 
