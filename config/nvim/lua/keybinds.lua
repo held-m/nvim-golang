@@ -33,3 +33,8 @@ map('v', '<Leader>w', '<CMD>FzfLua grep_cword<CR>')
 map('n', '<Leader>o', '<CMD>FzfLua<CR>')
 map('i', '<Leader>o', '<CMD>FzfLua<CR>')
 map('v', '<Leader>o', '<CMD>FzfLua<CR>')
+-- Formater
+map('n', '<Leader>f', '<CMD>Format<CR>')
+map('n', '<Leader>F', '<CMD>FormatWrite<CR>')
+
+vim.api.nvim_set_keymap("i", "<C-/>", 'copilot#Accept("<CR>")', { silent = true, expr = true })

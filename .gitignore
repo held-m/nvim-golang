@@ -1,2 +1,6 @@
 /tmp/*
-
+config/github-copilot
+config/nvim/pack
+config/nvim/plugin
+.local
+Dockerfile.old

@@ -1,11 +1,11 @@
-# Neovim Golang
+# Neovim Frontend
 ## Intall
 
 `docker build -t %name% .`
 
 ## Usage
 docker  
-`docker run -it -v $(pwd):/app %name% sh`
+`docker run -it -v $(pwd):/app -v $XDG_RUNTIME_DIR/$WAYLAND_DISPLAY:/tmp/$WAYLAND_DISPLAY %name% -p 19000:19000 sh`
 
 docker-compose.yml
 ```
