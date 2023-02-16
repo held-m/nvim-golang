@@ -13,10 +13,11 @@ version: "3"
 
 services:
   nvim:
-    image:docker.simonenko.club/nvim-node14.21:latest
+    image:docker.simonenko.club/nvim-golang-1.19:latest
     volumes:
         - ./:/app
 ```
+
 ## Keymap
 
 Leader - ";"  
