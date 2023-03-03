@@ -80,6 +80,9 @@ return require('packer').startup(function(use)
 
 	use {'ibhagwan/fzf-lua'};
 
+	use {'RishabhRD/popfix'}
+  use {'RishabhRD/nvim-lsputils'}
+
 	-- keymap
 	use {'folke/which-key.nvim'};
 
